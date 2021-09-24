@@ -8,4 +8,4 @@ Scripts in this repository are designed to be run from MDM Self Service or from 
 #### Fix Spotlight Indexing Errors
 This script is designed to stop Spotlight indexing, clear the indexing cache at the root level and then restart indexing.
 ##### Command to execute
-`<addr>`
+`To be Added`
