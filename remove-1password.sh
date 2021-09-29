@@ -22,7 +22,6 @@
 # Script to remove 1Password 7.
 
 appName='1Password 7'
-#appFolder='ScanSnap/Sub'
 logfile="/Library/Logs/1PasswordRemoverScript.log"
 deplog="/var/tmp/depnotify.log"
 
