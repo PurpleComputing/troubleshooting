@@ -4,7 +4,7 @@
 # ABOUT THIS PROGRAM
 #
 # NAME
-#   ScanSnap Manager Remover.sh -- Removes ScanSnap Manager
+#   1Password 7.sh -- Removes 1Password 7
 #
 # SYNOPSIS
 #   sudo 1Password 7 Remover.sh
