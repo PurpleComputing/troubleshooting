@@ -21,5 +21,14 @@
 #
 #########################################################################
 #
-/usr/bin/security authorizationdb write system.print.operator allow
-/usr/sbin/dseditgroup -o edit -n /Local/Default -a everyone -t group lpadmin
+logfile="/Library/Logs/prpl-troubleshooting.log"
+deplog=" /var/tmp/depnotify.log"
+echo Running fix-printer-lpadmin.sh >> ${deplog}
+
+echo Allowing Print Operator >> ${logfile}
+/usr/bin/security authorizationdb write system.print.operator allow >> ${logfile}
+echo Adding Everyone group to lpadmin >> ${logfile}
+/usr/sbin/dseditgroup -o edit -n /Local/Default -a everyone -t group lpadmin >> ${logfile}
+echo Finished lpadmin script >> ${logfile}
+
+echo Completed fix-printer-lpadmin.sh >> ${deplog}
