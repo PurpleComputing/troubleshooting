@@ -21,3 +21,9 @@ This script is designed to add everyone to the lpadmin group to prevent admin po
 This script is designed to remove the 1Password 7 application, line 44 can be uncommented to reinstalled using the relevant JAMF Policy ID.
 ##### Command to execute/add to MDM:
 `sudo curl -o /tmp/remove-1password.sh https://raw.githubusercontent.com/PurpleComputing/troubleshooting/main/remove-1password.sh && sudo chmod +x /tmp/remove-1password.sh && sudo /tmp/remove-1password.sh
+
+## onedrive-check-launch.sh
+#### Checks if OneDrive is running and if it isn't launches the application.
+This script is designed to checks if OneDrive is running and if it isn't launches the application. Designed to be run on Device Check-in to ensure the CloudStorage is mounted.
+##### Command to execute/add to MDM:
+`sudo curl -o /tmp/onedrive-check-launch.sh https://raw.githubusercontent.com/PurpleComputing/troubleshooting/main/onedrive-check-launch.sh && sudo chmod +x /tmp/onedrive-check-launch.sh && sudo /tmp/onedrive-check-launch.sh
