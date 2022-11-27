@@ -15,7 +15,7 @@ echo "*** PURPLE FIX ONEDRIVE PERMISSION BUG SCRIPT ***"
 ############################################################################################### 
 # NOTICE: MAC SPECIFIC SCRIPT
 ###############################################################################################
-killall Finder OneDrive
+killall Finder OneDrive "OneDrive Finder Integration"
 sudo -u $(stat -f "%Su" /dev/console) osascript <<EOF
 tell application "OneDrive"
     activate
